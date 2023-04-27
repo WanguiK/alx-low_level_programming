@@ -5,10 +5,9 @@
  *@a: parameter
  *@b: parameter
  *
- *Return: Always 0
+ *Return: multiple of a and b
  */
 int mul(int a, int b)
 {
-	mul(a,b);
-	return (0);
+	return (a * b);
 }
