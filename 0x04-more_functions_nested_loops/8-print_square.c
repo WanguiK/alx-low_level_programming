@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *print_square - prints square
+ *print_square - prints square using #
  *@size: parameter
  *
  * Return: /n if size is less than or equal to 0
