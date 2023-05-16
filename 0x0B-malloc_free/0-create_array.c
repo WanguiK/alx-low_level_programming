@@ -2,14 +2,14 @@
 #include <stdlib.h>
 
 /*
- * create_array- creates an array of chars,
- * and initializes it with a specific char
+ * create_array - Creates an array of chars,and initialize with specific char
  * @c: specific char to intiliaze
  * @size: size of the array
  *
  * Return: a pointer to the array, or NULL if it fails
  * or  size = 0
  */
+
 char *create_array(unsigned int size, char c)
 {
 	char *s;
@@ -28,6 +28,5 @@ char *create_array(unsigned int size, char c)
 	{
 		s[i] = c;
 	}
-	s[size] = '\0';
 	return (s);
 }
