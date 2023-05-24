@@ -4,6 +4,7 @@
  * int_index- searches for an integer
  * @size: is the number of elements in the array
  * @array: array of integers
+ * @cmp: to compare
  *
  * Return: 0 if size <= 0 or -1 if it fails
  */
