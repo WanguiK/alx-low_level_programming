@@ -19,13 +19,11 @@ list_t *add_node(list_t **head, const char *str)
 	{
 		return (NULL);
 	}
-
 	while (str[len])
 	{
 		len++;
 	}
 	new->len = len;
-
 	new->str = strdup(str);
 	if (!(*head))
 	{
@@ -36,6 +34,5 @@ list_t *add_node(list_t **head, const char *str)
 		new->next = *head;
 	}
 	*head = new;
-
 	return (*head);
 }
