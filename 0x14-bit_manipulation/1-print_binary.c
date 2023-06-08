@@ -4,14 +4,21 @@
 /**
  * print_binary- prints the binary representation of a number
  * @n: number to print
- * Return: 0 Always
+ * Return: None
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int i;
+	int i;
 
-	for (i = 1 << 31; i > 0; i = i / 2)
+	for (i = 31; i >= 0; i--)
 	{
-		_putchar((n & 1) ? '1' : '0');
+		if (n & (1 << i))
+		{
+			_putchar('1');
+		}
+		else
+		{
+			_putchar('0');
+		}
 	}
 }
