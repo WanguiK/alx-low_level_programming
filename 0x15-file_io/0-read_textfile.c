@@ -29,4 +29,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		fclose(file);
 		return (0);
 	}
+	buffer[bytesRead] = '\0';
+	printf("%s", buffer);
+
+	fclose(file);
+	return (bytesRead);
 }
